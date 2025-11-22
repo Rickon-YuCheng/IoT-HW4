@@ -1,6 +1,9 @@
-# 客觀的人工智慧隨身教授 (Gradio)
+# 客觀的人工智慧隨身教授 (Gradio / Streamlit)
 
-一個使用 Gradio 打造的簡易 Web App，將使用者的提問送到 Groq LLM，並以「理工科指導教授」口吻提供 AI/ML 相關指引。
+使用 Groq LLM，提供「理工科指導教授」風格的 AI/ML 咨詢。提供 Gradio 與 Streamlit 兩種介面。
+
+## 線上體驗
+- Streamlit 部署網址：`<填入你的 Streamlit 網址>`  （部署後記得更新此欄位）
 
 ## 安裝與執行
 1) 建立虛擬環境並安裝套件：
@@ -13,16 +16,23 @@ pip install -r requirements.txt
 ```bash
 GROQ_API_KEY=your_groq_key
 ```
-3) 啟動 Gradio 介面：
+### Gradio 介面
 ```bash
 python IOT-hw4.py
 ```
 終端機會顯示本機與公開分享 (share) 連結，可直接點擊使用。
 
+### Streamlit 介面
+```bash
+streamlit run streamlit_app.py
+```
+預設在本機 `http://localhost:8501`，部署到 Streamlit Cloud 時請把專案加上環境變數 `GROQ_API_KEY`。
+
 ## 專案結構
 - `IOT-hw4.py`：主程式，定義系統提示與 Gradio 介面。
+- `streamlit_app.py`：同一個 AI 教授角色的 Streamlit 版本。
 - `requirements.txt`：所需套件列表。
-- `.gitignore`：忽略 `.env`、`.venv/`、`.gradio/`、快取檔等不必要內容。
+- `.gitignore`：忽略 `.env`、`.venv/`、`.gradio/`、`.streamlit/`、快取檔等不必要內容。
 
 ## 備註
 - 請勿將個人 API 金鑰加入版本控制。
