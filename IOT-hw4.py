@@ -146,7 +146,7 @@ with gr.Blocks(title="客觀的人工智慧隨身教授") as demo:
 
 
     with gr.Row():
-        user_input = gr.Textbox(label="請輸入你想請教教授的 AI 問題：", placeholder="例如：我要在 Ubuntu 上訓練一個多模態憂鬱偵測模型，資料不平衡時應該怎麼設計 loss？")
+        user_input = gr.Textbox(label="請輸入你想請教教授的 AI 問題：", placeholder="例如：我要如何在 Ubuntu 上手刻多模態模型用以實現沒有SourceCode paper")
 
     submit_btn = gr.Button("請教教授")
     output = gr.Textbox(label="教授的回覆", lines=10)

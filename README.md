@@ -3,7 +3,7 @@
 使用 Groq LLM，提供「理工科指導教授」風格的 AI/ML 咨詢。提供 Gradio 與 Streamlit 兩種介面。
 
 ## 線上體驗
-- Streamlit 部署網址：`<填入你的 Streamlit 網址>`  （部署後記得更新此欄位）
+- Streamlit 部署網址：`https://iot-hw4-gsz5722xfnvsde6ft2ygfg.streamlit.app/`  （部署後記得更新此欄位）
 
 ## 安裝與執行
 1) 建立虛擬環境並安裝套件：

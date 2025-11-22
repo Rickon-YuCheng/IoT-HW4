@@ -122,7 +122,7 @@ def main():
 
     prompt = st.text_area(
         "請輸入你想請教教授的 AI 問題：",
-        placeholder="例如：我要在 Ubuntu 上訓練多模態憂鬱偵測模型，資料不平衡時應該怎麼設計 loss？",
+        placeholder="例如：我要如何在 Ubuntu 上手刻多模態模型用以實現沒有SourceCode paper",
         height=160,
     )
 
